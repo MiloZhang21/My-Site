@@ -1,0 +1,131 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+html {
+  font-family: "didot";
+}
+*{
+  color: black;
+}
+
+/*****************
+/ Name 
+/*****************/
+
+div {
+  color: black;
+  display: grid;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: max-content max-content;
+}
+.titleOne {
+  font-size: 100px;
+  margin: 0;
+  writing-mode: sideways-rl;
+  text-align: center;
+  line-height: .20;
+
+}
+.titleTwo{
+  text-indent: 10px;
+  font-size: 100px;
+  transform: rotate(20deg);
+}
+/*
+.transition {
+  text-align: left;
+  transition: 1s;
+}
+
+li:hover .transiton {
+  transform: translateX(100%);
+}
+li:hover .transition{
+  transform: translateX(-20%);
+}
+/*****************
+/ Contact info
+/*****************/
+.infoOne{
+  font-size: 30px;
+}
+button{
+  text-indent: 40px;
+  border: transparent;
+  border-color: white;
+  background-color: white;
+}
+.aboutMe{
+  display: flex;
+  font-size: 50px;
+}
+
+/*****************
+/ About
+/****************/
+
+
+/*****************
+/ Navigation bar
+/*****************/
+.navBar {
+  margin-top: 10px;
+  margin-left: 30px;
+  overflow: hidden;
+  background-color: transparent;
+  position:fixed; 
+  top: 0; 
+  width: 100%; 
+  
+}
+
+.navBar a {
+  float: left;
+  display:flex;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navBar a:hover{
+  color: white;
+}
+.navBar a:hover{
+  background: #000000;
+}
+
+/*****************
+/ Logos
+/*****************/
+
+
+
+@media screen and(max-width: 600px) {
+  .contatiner{
+    overflow-y: hidden;
+  }
+  .titleOne{
+    font-size: 20px;
+  }
+  .titleTwo{
+    font-size: 20px;
+  }
+}
